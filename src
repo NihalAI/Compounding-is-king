@@ -69,7 +69,7 @@ input[type="submit"]:hover {
 		<input type="number" id="principal" placeholder="Enter Principal Amount" required>
 		<label for="rate">Rate of Interest:</label>
 		<input type="number" id="rate" placeholder="Enter Rate of Interest" required>
-		<label for="time">Time Period:</label>
+		<label for="time">Time Period:(in years)</label>
 		<input type="number" id="time" placeholder="Enter Time Period" required>
 		<input type="submit" value="Calculate">
 	</form>
