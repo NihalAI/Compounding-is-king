@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Compound Interest Calculator</title>
+  <link rel="stylesheet" href="compound.css">
+</head>
+<body>
+  <h1>Compounding Interest Calculator</h1>
+	<form onsubmit="calculateCompoundInterest(event)">
+		<label for="principal">Principal Amount:</label>
+		<input type="number" id="principal" placeholder="Enter Principal Amount" required>
+		<label for="rate">Rate of Interest:</label>
+		<input type="number" id="rate" placeholder="Enter Rate of Interest" required>
+		<label for="time">Time Period:(in years)</label>
+		<input type="number" id="time" placeholder="Enter Time Period" required>
+        <br>
+        <label for="frequency">Compounding Frequency:</label>
+        <select id="frequency" name="frequency">
+            <option value="annually">Annually</option>
+            <option value="semiannually">Semiannually</option>
+            <option value="quarterly">Quarterly</option>
+            <option value="monthly">Monthly</option>
+            <option value="weekly">Weekly</option>
+            <option value="daily">Daily</option>
+        </select>
+		<input type="submit" value="Calculate">
+	</form>
+	<div class="result" id="result"></div>
+    <script src="comp.js"></script>
+</body>
+</html>
